@@ -1,11 +1,11 @@
-let username;
-document.getElementById("button").onclick = function () {
-  username = document.getElementById("input").value;
-  document.getElementById("myh1").textContent = `HELLO ${username}`;
-};
-let radious;
-let cir;
-const PI = Number(3.14159);
-radious = window.prompt("enter radious of circle");
-cir = 2 * PI * radious;
-console.log(cir);
+let display = document.getElementById("display");
+
+document.getElementById("inc").addEventListener("click", (evt) => {
+  display.innerText = Number(display.innerText) + 1;
+});
+document.getElementById("dec").addEventListener("click", (evt) => {
+  display.innerText = Number(display.innerText) - 1;
+});
+document.getElementById("reset").addEventListener("click", () => {
+  display.innerText = 0;
+});

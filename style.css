@@ -1,0 +1,21 @@
+.display {
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+.button {
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
