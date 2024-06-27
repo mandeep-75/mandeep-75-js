@@ -1,7 +1,8 @@
 var username = document.getElementById("username");
-var gmail = document.getElementById("gmail");
+var email = document.getElementById("email");
 var text = document.getElementById("text");
 
-document.getElementById("button").addEventListener("click", (evt) => {
-  username.innerText = text.innerText;
+document.getElementById("submit").addEventListener("click", () => {
+  username.innerText = text.value;
+  email.innerText = text.value + "@gmail.com";
 });
