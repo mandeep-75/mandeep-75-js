@@ -1,52 +1,23 @@
-var array = [
-  ,
-  564,
-  56,
-  45,
-  63,
-  5,
-  345,
-  3,
-  756,
-  867,
-  89,
-  78,
-  9,
-  687,
-  4,
-  53,
-  32,
-  23,
-  23,
-  23,
-  3,
-  2,
-  3,
-  23,
-  23,
-  23,
-  2323,
-  23,
-  23,
-  232,
-  3,
-  34,
-  32,
-  423,
-  435,
-  34,
-  54,
-  545,
-  6,
-  45,
-  644,
-  56,
-  456,
-  43,
-  2,
-];
-function call() {
-  for (let i = 0; (i = 40); i++) {
-    console.log(element);
+class Animal {
+  constructor(name, sound, age) {
+    this.name = name;
+    this.sound = sound;
+    this.age = age;
+  }
+  greet() {
+    console.log(
+      `${this.name} says ${this.sound} and is ${this.age} years old. ${this.breed}`
+    );
   }
 }
+
+class Dog extends Animal {
+  constructor(name, sound, age, breed) {
+    super(name, sound, age);
+    this.breed = breed;
+  }
+}
+const jkimal = new Animal("karan", "cat", 34234);
+const karan = new Dog("karan", "dog", 32, "libera");
+
+jkimal.greet();
